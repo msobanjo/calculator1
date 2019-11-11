@@ -1,5 +1,5 @@
 #!/bin/bash
-ech "$1 $2 $3"
+echo "$1 $2 $3"
 if [ $2 = + ]
 then
 echo $(( $1 + $3 ))
