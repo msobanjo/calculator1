@@ -3,7 +3,7 @@ echo "$1 $2 $3"
 if [ $2 = - ]
 then
 echo $(( $1 - $3 ))
-fi=
+fi
 if [ $2 == "%" ]
 then
 	echo $(( $1 % $3 ))
