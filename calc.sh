@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "$1 $2 $3"
-if [ $2 = + ]
+if [ $2 == + ]
 then
 echo $(( $1 + $3 ))
 fi
@@ -10,7 +10,7 @@ then
 echo $(( $1 / $3 ))
 fi
 
-if [ $2 = - ]
+if [ $2 == - ]
 then
 echo $(( $1 - $3 ))
 fi
@@ -18,5 +18,10 @@ fi
 if [ $2 == "%" ]
 then
 echo $(( $1 % $3 ))
+fi
+
+if [ $2 == "x" ]
+then
+echo $(( $1 * $3 ))
 fi
 
